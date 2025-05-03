@@ -1,0 +1,150 @@
+
+  
+  .title {
+    font-size: 22px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    word-wrap: break-word;
+  }
+  
+  .input-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  .tags-input {
+    flex: 1;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 8px;
+    border: 2px solid #ccc;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .tags-input:focus {
+    border-color: #007acc;
+  }
+  
+  .bookmark-btn {
+    background-color: #007acc;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .bookmark-btn:hover {
+    background-color: #005fa3;
+  }
+  
+  /* Bookmark List */
+  .timestamp-list {
+    width: 100%;
+    max-height: 240px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  .timestamp-list li {
+    display: flex;
+    background-color: #f9f9f9;
+    margin-bottom: 12px;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    justify-content: space-between;
+    transition: transform 0.3s ease;
+  }
+  
+  .timestamp-list li:hover {
+    transform: translateX(5px);
+  }
+  
+  .timestamp-list li img {
+    width: 70px;
+    height: 40px;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-right: 15px;
+  }
+  
+  .timestamp-list li .details {
+    flex: 1;
+  }
+  
+  .timestamp-list li .details a {
+    font-weight: 600;
+    color: #007acc;
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+  }
+  
+  .timestamp-list li .details .tags {
+    font-size: 12px;
+    color: #999;
+    margin-top: 5px;
+  }
+  
+  .timestamp-list li button {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    color: #ff6f61;
+    transition: color 0.3s ease;
+  }
+  
+  .timestamp-list li button:hover {
+    color: #e04e4e;
+  }
+  
+  .timestamp-list li button.fav {
+    color: #f8b400;
+  }
+  
+  .timestamp-list li button.fav:hover {
+    color: #ffdf33;
+  }
+  
+  /* Export Button */
+  .export-btn {
+    margin-top: 20px;
+    background-color: #007acc;
+    color: rgb(254, 254, 254);
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+  }
+  
+  .export-btn:hover {
+    background-color: #005fa3;
+  }
+  body.dark {
+    background-color: #121212;
+    color: rgb(147, 8, 8);
+  }
+  
+  body.dark button,
+  body.dark input,
+  body.dark a {
+    background-color: #333;
+    color: rgb(255, 255, 255);
+    border: 1px solid #555;
+  }
+  

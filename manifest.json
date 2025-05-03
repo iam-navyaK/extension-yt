@@ -1,0 +1,35 @@
+{
+    "manifest_version": 3,
+    "name": "YouTube Timestamp Bookmark",
+    "version": "1.0",
+    "description": "Bookmark specific timestamps in YouTube videos and revisit them easily.",
+    "permissions": ["scripting", "storage", "tabs", "activeTab", "commands"],
+    "host_permissions": ["https://www.youtube.com/*"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "icons/icon16.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
+      }
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://www.youtube.com/watch*"],
+        "js": ["content.js"]
+      }
+    ],
+    "commands": {
+      "bookmark-timestamp": {
+        "suggested_key": {
+          "default": "Ctrl+Shift+B",
+          "mac": "Command+Shift+B"
+        },
+        "description": "Bookmark current timestamp on YouTube"
+      }
+    }
+  }
+  

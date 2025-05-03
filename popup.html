@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YouTube Bookmark</title>
+  <link rel="stylesheet" href="popup.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <label for="darkModeToggle">Dark Mode</label>
+<input type="checkbox" id="darkModeToggle" />
+
+  <div class="popup-container">
+    <h1 class="title">YouTube Timestamp Bookmarks</h1>
+
+    <div class="input-container">
+      <input type="text" id="tags" placeholder="Add tags (optional)" class="tags-input" />
+      <button id="bookmark" class="bookmark-btn">📌 Bookmark Timestamp</button>
+    </div>
+
+    <ul id="timestampList" class="timestamp-list"></ul>
+
+
+      
+    <button id="export" class="export-btn">⬇ Export Bookmarks</button>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
